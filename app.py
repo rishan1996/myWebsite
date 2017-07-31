@@ -8,9 +8,9 @@ def get_nav_bar(title):
     return '''<html>
     <head>
     <!--Load the stylesheet-->
-    <link rel="stylesheet" type="text/css" href="/static/css/mainStyle.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/mainStyle.css">
 
-    <!--Set the page title in the tab-->
+        <!--Set the page title in the tab-->
         <title>
 			''' + title + '''
         </title>
@@ -32,27 +32,43 @@ def get_nav_bar(title):
 # The home page
 @app.route('/')
 def home():
-    return render_template('index.html')
+    temp = get_nav_bar('Home')
+    # Split the nav bar string and insert the active tag on current page
+    nav_bar1 = temp[:408]
+    nav_bar2 = temp[408:]
+    nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
+    return nav_bar + render_template('index.html')
 
 
 # The portfolio page
 @app.route('/portfolio')
 def portfolio():
-    return render_template('portfolio.html')
+    temp = get_nav_bar('Rishan\'s Portfolio')
+    # Split the nav bar string and insert the active tag on current page
+    nav_bar1 = temp[:488]
+    nav_bar2 = temp[488:]
+    nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
+    return nav_bar + render_template('portfolio.html')
 
 
 # The contact us page
 @app.route('/contactus')
 def contact_us():
-    return render_template('contactUs.html')
+    temp = get_nav_bar('Contact Us')
+    # Split the nav bar string and insert the active tag on current page
+    nav_bar1 = temp[:635]
+    nav_bar2 = temp[635:]
+    nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
+    return nav_bar + render_template('contactUs.html')
 
 
 # The about us page
 @app.route('/aboutus')
 def about_us():
     temp = get_nav_bar('About Us')
-    nav_bar1 = temp[:549]
-    nav_bar2 = temp[549:]
+    # Split the nav bar string and insert the active tag on current page
+    nav_bar1 = temp[:557]
+    nav_bar2 = temp[557:]
     nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
     return nav_bar + render_template('aboutUs.html')
 
