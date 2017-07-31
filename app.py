@@ -18,8 +18,8 @@ def get_footer():
 def home():
     temp = get_nav_bar('Home')
     # Split the nav bar string and insert the active tag on current page
-    nav_bar1 = temp[:512]
-    nav_bar2 = temp[512:]
+    nav_bar1 = temp[:511]
+    nav_bar2 = temp[511:]
     nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
     return nav_bar + render_template('index.html') + get_footer()
 
@@ -29,8 +29,8 @@ def home():
 def portfolio():
     temp = get_nav_bar('Rishan\'s Portfolio')
     # Split the nav bar string and insert the active tag on current page
-    nav_bar1 = temp[:596]
-    nav_bar2 = temp[596:]
+    nav_bar1 = temp[:595]
+    nav_bar2 = temp[595:]
     nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
     return nav_bar + render_template('portfolio.html') + get_footer()
 
@@ -40,8 +40,8 @@ def portfolio():
 def about_us():
     temp = get_nav_bar('About Us')
     # Split the nav bar string and insert the active tag on current page
-    nav_bar1 = temp[:661]
-    nav_bar2 = temp[661:]
+    nav_bar1 = temp[:660]
+    nav_bar2 = temp[660:]
     nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
     return nav_bar + render_template('aboutUs.html') + get_footer()
 
@@ -51,8 +51,8 @@ def about_us():
 def contact_us():
     temp = get_nav_bar('Contact Us')
     # Split the nav bar string and insert the active tag on current page
-    nav_bar1 = temp[:739]
-    nav_bar2 = temp[739:]
+    nav_bar1 = temp[:738]
+    nav_bar2 = temp[738:]
     nav_bar = nav_bar1 + 'id="active" ' + nav_bar2
     return nav_bar + render_template('contactUs.html') + get_footer()
 

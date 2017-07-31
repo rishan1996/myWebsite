@@ -1,137 +1,146 @@
 html{
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body{
-  color: #4E4E4E;
-  font-family: Verdana, Arial, Geneva, Arial Black;
-  font-weight: normal;
-  margin: 0px;
-  height: 100%;
+    color: #4E4E4E;
+    font-family: Verdana, Arial, Geneva, Arial Black;
+    font-weight: normal;
+    margin: 0px;
+    height: 100%;
 }
 
 #navbarWrapper{
-  background-image: url('../images/nav-background.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
-  min-height: 5%;
+    background-image: url('../images/nav-background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 5%;
 }
 
 #navbar{
-  font-size: 19px;
-  padding: 0 20% 0 20%;
+    font-size: 19px;
+    padding: 0 20% 0 20%;
 }
 
 #navbar ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 5px 0px 5px 0px;
-  overflow: hidden;
-  width: 100%;
-  height: 5%;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 5%;
 }
 
 #navbar li{
-  color: #f1f1f1;
-  display: block;
-  text-decoration: none;
-  float: left;
-  padding: 10px 10px 10px 10px;
-  text-align: center;
+    color: #f1f1f1;
+    display: block;
+    text-decoration: none;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
 }
 
 #footerWrapper{
-  background-image: url('../images/nav-background.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
-  margin-top: -20px;
-  width: 100%;
-  height: 120px;
-  padding: 20px 0px 20px 0px;
-
+    background-image: url('../images/nav-background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: -20px;
+    width: 100%;
+    height: 120px;
+    padding: 20px 0px 20px 0px;
 }
 
 #footer{
-  font-size: 19px;
-  padding: 0 20% 0 20%;
+    font-size: 19px;
+    padding: 0 20% 0 20%;
 }
 
 #footer ul{
-
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 5%;
 }
 
 #footer li{
-
+    color: #f1f1f1;
+    display: block;
+    text-decoration: none;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
 }
 
 #active{
-  background-color: #0077ff;
-  border-color: #0077ff;
-  border: 5px;
-  border-radius: 5px;
+    background-color: #0077ff;
+    border-color: #0077ff;
+    border: 5px;
+    border-radius: 5px;
 }
 
 #contentWrapper{
-  background-image: url('../images/background-dark-2.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
-  min-height: 90%;
-  width: 100%;
-  margin-top: 0px;
-  padding: 10px 0 20px 0;
+    background-image: url('../images/background-dark-2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 90%;
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px 0 20px 0;
 }
 
 #content{
-  width: 60%;
-  padding: 10px 20% 20px 20%;
+    width: 60%;
+    padding: 10px 20% 20px 20%;
 }
 
 .container{
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .navitem a{
-  display: block;
-  padding: 4px 24px 4px 24px;
-  width: 200px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none;
+    display: block;
+    padding: 4px 24px 4px 24px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .navitem a:link{
-  color: #f1f1f1;
-  font-size: 19px;
+    color: #f1f1f1;
+    font-size: 19px;
 }
 
 .navitem a:hover{
-  color: #f4f4f4;
-  font-size: 20px;
+    color: #f4f4f4;
+    font-size: 20px;
 }
 
 .navitem a:visited{
-  color: #f1f1f1;
-  font-size: 19px;
+    color: #f1f1f1;
+    font-size: 19px;
 }
 
 .underline{
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 h1{
-  font-size: 35px;
+     font-size: 35px;
 }
 
 h2{
-  font-size: 25px;
+     font-size: 25px;
 }
 
 h3{
-  font-size:20px;
+    font-size:20px;
 }
 
 h4{
-  font-size: 15px;
+    font-size: 15px;
 }
