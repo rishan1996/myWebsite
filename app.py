@@ -71,6 +71,15 @@ def contact_us():
 	return nav_bar + render_template('contactUs.html') + get_footer()
 
 
+# The contact us page
+@app.route('/blog')
+def blog():
+	# Get nav bar and insert the active tag
+	nav_bar = insert_active_tag('href="blog"', 'Rishan\'s Blog')
+
+	return nav_bar + render_template('blog.html') + get_footer()
+
+
 # REMEMBER TO SET DEBUG TO FALSE WHEN PUBLISHED
 # Launches the server
 if __name__ == '__main__':
