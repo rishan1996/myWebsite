@@ -45,7 +45,7 @@ body{
         display: block;
         padding: 4px 24px 4px 24px;
         width: 200px;
-        height: 30px;
+        height: 50px;
         text-align: center;
         text-decoration: none;
     }
@@ -66,10 +66,9 @@ body{
     }
 
     .home li a:before{
-        font-family: "Material Icons";
-        content: "\4e88a";
-        background: url('../image/Home-icon.png');
+
     }
+
 
     .portfolio{
 
