@@ -25,21 +25,21 @@ def insert_active_tag(pattern, page_title):
 	# Find the position where the pattern is found
 	split_pos = 0
 	for m in re.finditer(regex_pattern, nav_bar):
-		split_pos = m.start()
+		split_pos = m.end()
 
 	# Split the string where pattern is found
 	nav_bar1 = nav_bar[:split_pos]
 	nav_bar2 = nav_bar[split_pos:]
 
 	# Insert the active tag
-	return nav_bar1 + 'id="active" ' + nav_bar2
+	return nav_bar1 + ' id="active"' + nav_bar2
 
 
 # The home page
 @app.route('/')
 def home():
 	# Get nav bar and insert the active tag
-	nav_bar = insert_active_tag('href="/"', 'Home')
+	nav_bar = insert_active_tag('"navitem home"', 'Home')
 
 	return nav_bar + render_template('index.html') + get_footer()
 
@@ -48,34 +48,34 @@ def home():
 @app.route('/portfolio')
 def portfolio():
 	# Get nav bar and insert the active tag
-	nav_bar = insert_active_tag('href="portfolio"', 'Rishan\'s Portfolio')
+	nav_bar = insert_active_tag('"navitem portfolio"', 'Rishan\'s Portfolio')
 
 	return nav_bar + render_template('portfolio.html') + get_footer()
 
 
 # The about us page
-@app.route('/aboutus')
+@app.route('/aboutme')
 def about_us():
 	# Get nav bar and insert the active tag
-	nav_bar = insert_active_tag('href="aboutus', 'About Us')
+	nav_bar = insert_active_tag('"navitem aboutme"', 'About Me')
 
-	return nav_bar + render_template('aboutUs.html') + get_footer()
+	return nav_bar + render_template('aboutMe.html') + get_footer()
 
 
 # The contact us page
-@app.route('/contactus')
+@app.route('/contactme')
 def contact_us():
 	# Get nav bar and insert the active tag
-	nav_bar = insert_active_tag('href="contactus"', 'Contact Us')
+	nav_bar = insert_active_tag('"navitem contactme"', 'Contact Me')
 
-	return nav_bar + render_template('contactUs.html') + get_footer()
+	return nav_bar + render_template('contactMe.html') + get_footer()
 
 
 # The contact us page
 @app.route('/blog')
 def blog():
 	# Get nav bar and insert the active tag
-	nav_bar = insert_active_tag('href="blog"', 'Rishan\'s Blog')
+	nav_bar = insert_active_tag('"navitem blog"', 'Rishan\'s Blog')
 
 	return nav_bar + render_template('blog.html') + get_footer()
 

@@ -5,160 +5,192 @@ html{
 
 body{
     color: #4E4E4E;
-    font-family: Verdana, Arial, Geneva, Arial Black;
+    font-family: monospace, sans-serif;
     font-weight: normal;
-    margin: 0px;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#navbarWrapper{
+    background-image: url('../images/nav-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 70%;
+    padding: 0 15% 0 15%;
+}
+
+#navbar{
+    font-size: 1.9em;
+    margin: 0;
+    width: 100%;
     height: 100%;
 }
-@media screen and (max-width: 1920px) and (min-width: 1806px){
-    #navbarWrapper{
-        background-image: url('../images/nav-background.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        min-height: 5%;
-    }
 
-    #navbar{
-        font-size: 19px;
-        padding: 0 10% 0 10%;
-    }
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 5%;
+}
 
-    #navbar ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 5px 0px 5px 0px;
-        overflow: hidden;
-        width: 100%;
-        height: 5%;
-    }
+#navbar li{
+    color: #f1f1f1;
+    display: inline-block;
+    text-decoration: none;
+    float: left;
+    padding: 0 0.5em 0 0.5em;
+}
 
-    #navbar li{
-        color: #f1f1f1;
-        display: block;
-        text-decoration: none;
-        float: left;
-        padding: 10px 10px 10px 10px;
-        text-align: center;
-    }
+#navbar li:hover{
+    color: #f4f4f4;
+    background-color: #0077ff;
+    padding-color: #0077ff;
+}
 
-    .navitem a{
-        display: block;
-        padding: 4px 24px 4px 24px;
-        width: 200px;
-        height: 50px;
-        text-align: center;
-        text-decoration: none;
-    }
+.navitem{
+    width: 18.5%;
+    height: 100%;
+    text-align: center;
+}
 
-    .navitem a:link{
-       color: #f1f1f1;
-       font-size: 19px;
-    }
+.navitem a{
+    display: block;
+    padding: 0.5em 2.4em 0.5em 2.4em;
+    width: 125px;
+    text-align: center;
+    text-decoration: none;
+}
 
-    .navitem a:hover{
-       color: #f4f4f4;
-       font-size: 20px;
-    }
+.navitem a:link, a:visited{
+   color: #f1f1f1;
+}
 
-    .navitem a:visited{
-       color: #f1f1f1;
-       font-size: 19px;
-    }
+.navitem a span{
+    font-size: 1.0em;
+}
 
-    .home li a:before{
+.navitem a span:hover{
+    font-size: 1.1em;
+}
 
-    }
+#contentWrapper{
+    background-image: url('../images/background-dark-2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100em;
+    width: 70%;
+    margin: 0;
+    padding: 6.5% 15% 12% 15%;
+}
 
+#content{
+    width: 100%;
+}
 
-    .portfolio{
+#footerWrapper{
+    background-image: url('../images/nav-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    margin-top: -2em;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    padding: 2em 40em 2em 40em;
+}
 
-    }
+#footer{
+    font-size: 1.9em;
+    width: 75%;
+    margin: 0;
+}
 
-    .aboutus{
+#footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 5%;
+}
 
-    }
+#footer li{
+    color: #f1f1f1;
+    display: inline-block;
+    text-decoration: none;
+    float: left;
+    padding: 1.0em 1.0em 1.0em 1.0em;
+    text-align: center;
+}
 
-    .contactus{
+#footer li:hover{
+    color: #f4f4f4;
+}
 
-    }
+.footeritem a{
+    display: block;
+    padding: 0.5em 2.4em 0.5em 2.4em;
+    width: 125px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
 
-    #footerWrapper{
-        background-image: url('../images/nav-background.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        margin-top: -20px;
-        width: 100%;
-        height: 120px;
-        padding: 20px 0px 20px 0px;
-    }
+.footeritem a:link, a:visited{
+   color: #f1f1f1;
+}
 
-    #footer{
-        font-size: 19px;
-        padding: 0 20% 0 20%;
-    }
+.footeritem a span{
+    font-size: 1.0em;
+}
 
-    #footer ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 5px 0px 5px 0px;
-        overflow: hidden;
-        width: 100%;
-        height: 5%;
-    }
+.footeritem a span:hover{
+    font-size: 1.1em;
+}
 
-    #footer li{
-        color: #f1f1f1;
-        display: block;
-        text-decoration: none;
-        float: left;
-        padding: 10px 10px 10px 10px;
-        text-align: center;
-    }
+#active{
+    background-color: #0077ff;
+    border-color: #0077ff;
+    padding-color: #0077ff;
+}
 
-    #active{
-        background-color: #0077ff;
-        border-color: #0077ff;
-        border: 5px;
-        border-radius: 5px;
-    }
+.underline{
+    text-decoration: underline;
+}
 
-    #contentWrapper{
-        background-image: url('../images/background-dark-2.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        min-height: 90%;
-        width: 100%;
-        margin-top: 0px;
-        padding: 10px 0 20px 0;
-    }
+h1{
+    font-size: 4em;
+}
 
-    #content{
-        width: 60%;
-        padding: 10px 20% 20px 20%;
-    }
+h2{
+     font-size: 3em;
+}
 
-    .container{
-        height: 100%;
-        width: 100%;
-    }
+h3{
+    font-size: 2.5em;
+}
 
-    .underline{
-        text-decoration: underline;
-    }
+h4{
+    font-size: 2em;
+}
 
-    h1{
-         font-size: 35px;
-    }
-
-    h2{
-         font-size: 25px;
-    }
-
-    h3{
-        font-size:20px;
-    }
-
-    h4{
-        font-size: 15px;
-    }
+p{
+    font-size: 2em;
 }

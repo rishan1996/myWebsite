@@ -5,9 +5,9 @@
     <!--Load the stylesheet-->
     <link rel="stylesheet" type="text/css" href="/static/css/mainStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<!--To do: add icons to nav bar  -->
 
 <!--Set the page title in the tab-->
 <title>{{title}}</title>
@@ -17,38 +17,57 @@
         <!--Set the area for the nav bar-->
         <div id="navbarWrapper">
             <div id="navbar">
-                <ul>
-                    <!--Set the links in the nav bar-->
+                <ul><!--Set the links in the nav bar-->
                     <li class="navitem home">
                         <a href="/">
-                            <i style="font-size: 36px" class="material-icons" id="icon-nav-home">home</i>
-                            <span>Home</span>
+                            <div class="icon">
+                                <i style="font-size: 36px" class="material-icons" id="icon-nav-home">&#xe88a;</i>
+                            </div>
+                            <div class="text">
+                                <span>Home</span>
+                            </div>
                         </a>
                     </li>
                     <li class="navitem portfolio">
                         <a href="portfolio">
-                            <i style="font-size: 36px" class="material-icons" id="icon-nav-portfolio">work</i>
-                            <span>Portfolio</span>
+                            <div class="icon">
+                                <i style="font-size: 36px" class="material-icons" id="icon-nav-portfolio">&#xe8f9;</i>
+                            </div>
+                            <div class="text">
+                                <span>Portfolio</span>
+                            </div>
                         </a>
                     </li>
-                    <li class="navitem aboutus">
-                        <a href="aboutus">
-                            <i style="font-size: 36px" class="material-icons" id="icon-nav-aboutus">account_circle</i>
-                            <span>About Us</span>
+                    <li class="navitem aboutme">
+                        <a href="aboutme">
+                            <div class="icon">
+                            <i style="font-size: 36px" class="material-icons" id="icon-nav-aboutme">&#xe853;</i>
+                            </div>
+                            <div class="text">
+                                <span>About Me</span>
+                            </div>
                         </a>
                     </li>
-                    <li class="navitem contactus">
-                        <a href="contactus">
-                            <i style="font-size: 36px" class="material-icons" id="icon-nav-contactus">perm_phone_msg</i>
-                            <span>Contact Us</span>
+                    <li class="navitem contactme">
+                        <a href="contactme">
+                            <div class="icon">
+                                <i style="font-size: 36px" class="material-icons" id="icon-nav-contactme">&#xe8a8;</i>
+                            </div>
+                            <div class="text">
+                                <span>Contact Me</span>
+                            </div>
                         </a>
                     </li>
                     <li class="navitem blog">
                         <a href="blog">
-                            <i style="font-size: 36px" class="material-icons" id="icon-nav-blog">insert_comment</i>
-                            <span>Blog</span>
+                            <div class="icon">
+                            <i style="font-size: 36px" class="material-icons" id="icon-nav-blog">&#xe24c;</i>
+                            </div>
+                            <div class="text">
+                                <span>Blog</span>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> <!-- End of navbar wrapper -->
